@@ -72,12 +72,35 @@ const Login = (props) => {
     return (
         <div className="body">
             {message && (
-                <div className="form-group">
-                    <div className="alert alert-danger" role="alert">
-                        {message}
+                <div className="modal fade"
+                     id="staticBackdrop"
+                     data-bs-backdrop="static"
+                     data-bs-keyboard="false"
+                     tabIndex="-1"
+                     aria-labelledby="staticBackdropLabel"
+                     aria-hidden="true">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="modal-header bg-info py-0">
+                                <h5 className="modal-title font-weight-light text-white fs-4" id="staticBackdropLabel">Information System</h5>
+                                <button type="button" className="btn-close bg-danger my-1" data-bs-dismiss="modal" aria-label="Close"/>
+                            </div>
+                            <div className="modal-body font-weight-bold text-danger">
+                                {message}
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                // <div className="form-group">
+                //     <div className="alert alert-danger" role="alert">
+                //         {message}
+                //     </div>
+                // </div>
             )}
+
             <div className="row  row-cols-sm-12 d-flex justify-content-center">
                 <div className="col col-sm-12">
                     <div className="card login">
@@ -112,7 +135,7 @@ const Login = (props) => {
 
 
                                 <div className="form-group mt-4">
-                                    <button className="btn btn-info" disabled={loading}>
+                                    <button className="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop" disabled={loading}>
                                         {loading && (
                                             <span className="spinner-border spinner-border-sm"/>
                                         )}

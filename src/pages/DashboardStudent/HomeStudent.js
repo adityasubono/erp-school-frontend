@@ -28,10 +28,11 @@ function HomeStudent() {
                             <h5 className="card-title"></h5>
                             <figure>
                                 <blockquote className="blockquote">
-                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                    <p>Terkadang kita diuji bukan untuk menunjukkan kelemahan kita,
+                                        tetapi untuk menemukan kekuatan kita</p>
                                 </blockquote>
                                 <figcaption className="blockquote-footer">
-                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                    Arron Mause <cite title="Source Title">Mahakarya Yang Terbelakang</cite>
                                 </figcaption>
                             </figure>
                         </div>
