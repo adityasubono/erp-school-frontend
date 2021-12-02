@@ -1,7 +1,7 @@
 import axios from "axios";
 import authHeader from "./auth-header";
 
-const API_URL = "http://localhost:8080/api/player/";
+const API_URL = "http://localhost:5000/api/player/";
 
 const createFootballPlayer = () => {
     return axios

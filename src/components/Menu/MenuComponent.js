@@ -340,7 +340,11 @@ function MenuComponentRoleTeacher() {
                 <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
                     <li><a className="dropdown-item text-dark font-weight-light" href="#">School Information</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Marking Periods</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
                     <li><a className="dropdown-item text-dark font-weight-light" href="#">Calender</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Courses</a></li>
                 </ul>
             </li>
 
@@ -348,14 +352,40 @@ function MenuComponentRoleTeacher() {
                 <a className="nav-link dropdown-toggle text-white font-weight-light" href="#"
                    id="navbarScrollingDropdown"
                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Schedule
+                    Students
                 </a>
                 <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">My Schedule</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Student Info</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">My Request</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Associated Parents</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Schedule Report</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Report</a></li>
+                </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white font-weight-light" href="#"
+                   id="navbarScrollingDropdown"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Info
+                </a>
+                <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">My Info</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Prefences</a></li>
+                </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white font-weight-light" href="#"
+                   id="navbarScrollingDropdown"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Scheduling
+                </a>
+                <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">View Schedule</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Reports</a></li>
                 </ul>
             </li>
 
@@ -366,15 +396,15 @@ function MenuComponentRoleTeacher() {
                     Grades
                 </a>
                 <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Gradebook Grades</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Input Final Grades</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Final Grades</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Report Cards</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Progress Reports</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Gradebook</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Transcripts</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Reports</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">GPA Class Rank</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Setup</a></li>
                 </ul>
             </li>
 
@@ -385,9 +415,12 @@ function MenuComponentRoleTeacher() {
                     Attendance
                 </a>
                 <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Absences</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Take Attendance</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Daily Summary</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Attendace Chart</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Absense Summary</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
                 </ul>
             </li>
 
@@ -398,9 +431,7 @@ function MenuComponentRoleTeacher() {
                     Extracurricular
                 </a>
                 <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Student Screen</a></li>
-                    <li><hr className="dropdown-divider bg-white"/></li>
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Student List</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Enter Extracurricular</a></li>
                 </ul>
             </li>
 
@@ -415,7 +446,7 @@ function MenuComponentRoleTeacher() {
                     <li><hr className="dropdown-divider bg-white"/></li>
                     <li><a className="dropdown-item text-dark font-weight-light" href="#">Compose</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
-                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Send Message</a></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Sent Message</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
                     <li><a className="dropdown-item text-dark font-weight-light" href="#">Trash</a></li>
                     <li><hr className="dropdown-divider bg-white"/></li>
@@ -830,6 +861,109 @@ function MenuComponentRoleOperational() {
     )
 }
 
+function MenuComponentRoleParent() {
+    return (
+        <>
+            <li className="nav-item">
+                <a className="nav-link text-white font-weight-light" href="/dashboard">Home</a>
+            </li>
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white font-weight-light" href="#"
+                   id="navbarScrollingDropdown"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Students
+                </a>
+                <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Student Info</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Change Password</a></li>
+                </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white font-weight-light" href="#"
+                   id="navbarScrollingDropdown"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Info
+                </a>
+                <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">My Info</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Prefences</a></li>
+                </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white font-weight-light" href="#"
+                   id="navbarScrollingDropdown"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Scheduling
+                </a>
+                <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Schedule</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Student Request</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Schedule Report</a></li>
+                </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white font-weight-light" href="#"
+                   id="navbarScrollingDropdown"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Grades
+                </a>
+                <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Gradebook Grades</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Final Grades</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Report Cards</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Progress Report</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Transcript</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">GPA Class Rank</a></li>
+                </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white font-weight-light" href="#"
+                   id="navbarScrollingDropdown"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Attendance
+                </a>
+                <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Absences</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Daily Summary</a></li>
+                </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white font-weight-light" href="#"
+                   id="navbarScrollingDropdown"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Messaging
+                </a>
+                <ul className="dropdown-menu bg-info" aria-labelledby="navbarScrollingDropdown">
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Inbox</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Compose</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Sent Message</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Trash</a></li>
+                    <li><hr className="dropdown-divider bg-white"/></li>
+                    <li><a className="dropdown-item text-dark font-weight-light" href="#">Group</a></li>>
+                </ul>
+            </li>
+        </>
+    )
+}
+
 
 function MenuComponent({roles}) {
 
@@ -890,6 +1024,14 @@ function MenuComponent({roles}) {
         return (
             <>
                 <MenuComponentRoleLibary />
+            </>
+        );
+    }
+
+    if (roles == "ROLE_PARENT") {
+        return (
+            <>
+                <MenuComponentRoleParent />
             </>
         );
     }

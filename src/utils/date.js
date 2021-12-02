@@ -2,6 +2,17 @@ export function formatDate(date, format) {
     const getMountText = date.getMonth() + 1;
     let mount = "";
 
+    const a = new Date();
+    const days = new Array(7);
+    days[0] = "Sunday";
+    days[1] = "Monday";
+    days[2] = "Tuesday";
+    days[3] = "Wednesday";
+    days[4] = "Thursday";
+    days[5] = "Friday";
+    days[6] = "Saturday";
+    const nameDay = days[a.getDay()];
+
     if (getMountText == 1) {
         mount += "January";
     } else if (getMountText === 2) {
@@ -30,10 +41,11 @@ export function formatDate(date, format) {
 
     const map = {
         // mm: date.getDate() + 1,
+        day: days[a.getDay()],
         mm: mount,
         dd: date.getDate(),
         yy: date.getFullYear().toString(),
     }
 
-    return format.replace(/mm|dd|yy|yyy/gi, matched => map[matched])
+    return format.replace(/day|mm|dd|yy|yyy/gi, matched => map[matched])
 }

@@ -10,6 +10,8 @@ import CheckButton from "react-validation/build/button";
 import Select from "react-validation/build/select";
 
 import {login} from "../../actions/auth";
+import {formatDate} from "../../utils/date";
+import {Clock} from "../../utils/clock";
 
 const required = (value) => {
     if (!value) {
@@ -22,6 +24,7 @@ const required = (value) => {
 };
 
 const Login = (props) => {
+    const today = new Date();
     const form = useRef();
     const checkBtn = useRef();
 
@@ -71,6 +74,17 @@ const Login = (props) => {
 
     return (
         <div className="body">
+            {/*<div className="card login">*/}
+            {/*    <div className="card-header text-white fs-4 font-weight-light">*/}
+            {/*        {formatDate(today, "day, dd mm yy")}*/}
+            {/*    </div>*/}
+            {/*    <div className="card-body login">*/}
+            {/*        <blockquote className="blockquote mb-0">*/}
+            {/*            <p className="text-white text-center fs-1 font-weight-light">{Clock()}</p>*/}
+            {/*        </blockquote>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+
             {message && (
                 <div className="modal fade"
                      id="staticBackdrop"
@@ -94,15 +108,10 @@ const Login = (props) => {
                         </div>
                     </div>
                 </div>
-                // <div className="form-group">
-                //     <div className="alert alert-danger" role="alert">
-                //         {message}
-                //     </div>
-                // </div>
             )}
 
-            <div className="row  row-cols-sm-12 d-flex justify-content-center">
-                <div className="col col-sm-12">
+            <div className="row row-cols-sm-12 d-flex justify-content-center">
+                <div className="col col-sm-12 ">
                     <div className="card login">
                         <div className="card-header">
                             <h5 className="card-title font-weight-light fs-4 text-white text-center">CBIS LOGIN</h5>
@@ -146,8 +155,6 @@ const Login = (props) => {
                                         <span className="text-white font-weight-light fs-4">Register</span>
                                     </a>
                                 </div>
-
-
                                 <CheckButton style={{display: "none"}} ref={checkBtn}/>
                             </Form>
                         </div>

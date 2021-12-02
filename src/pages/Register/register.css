@@ -9,3 +9,29 @@
     justify-content: center;
     height: 100vh;
 }
+
+.register {
+    width: 100%;
+    height: 25rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.register:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(80, 74, 74, 0.5);
+    filter: blur(10px);
+    margin: -20px;
+}
+

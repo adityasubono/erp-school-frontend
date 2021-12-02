@@ -30,7 +30,7 @@ function HeaderComponent() {
                         </div>
                         <div className="d-flex justify-content-end text-white">
                             <div className="font-weight-light fs-5">
-                                <span>{formatDate(today, "dd mm yy")}</span>
+                                <span>{formatDate(today, "day, dd mm yy")}</span>
                             </div>
                         </div>
                     </div>
